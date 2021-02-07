@@ -10,74 +10,108 @@
 </head>
 
 <body>
+
+    <div class="main-screen" onclick="toggleMenu()"></div>
+
     <header class="main-header flex space-between align-center">
         <div class="main-container flex space-between  align-center list-width">
             <div class="logo">Blogin<span class="logo-span">.</span></div>
             <ul class="main-nav clean-list flex">
-                <li><a href="#train-station" class=" header-li flex align-center justify-content">Journal</a></li>
-                <li><a href="#national-park" class=" header-li flex align-center justify-content">About</a></li>
-                <li><a href="#food-factory" class=" header-li flex align-center justify-content">Work</a></li>
-                <li><a href="#social" class="header-li flex align-center justify-content">Contact</a></li>
+                <li><a href="#" class=" header-a flex align-center justify-content">Journal</a></li>
+                <li><a href="#" class=" header-a flex align-center justify-content">About</a></li>
+                <li><a href="#" class=" header-a flex align-center justify-content">Work</a></li>
+                <li><a href="#" class="header-a flex align-center justify-content">Contact</a></li>
             </ul>
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
         </div>
     </header>
 
     <main class="main-content main-container ">
         <article class="card flex  list-width" id="train-station">
             <img src="images/image1.jpeg" alt="" class="card-image ">
-            <div class="pri-container flex-column">
+            <div class="pri-container flex flex-column">
                 <h2 class="card-title">Duis aute irure dolor in henderit in voluptate.</h2>
-                <p class="card-text ">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat,<br /><br/> sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur...</p>
-                <button class="card-btn">Continue Reading </button>
+                <p class="card-text ">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat,</p>
+                <p>sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+                <button class="card-btn" onclick="toggleModal()">Continue Reading </button>
             </div>
         </article>
         <article class="card flex  list-width" id="national-park">
             <img src="images/image2.jpeg" alt="" class="card-image">
-            <div class="pri-container flex-column">
+            <div class="pri-container flex flex-column">
                 <h2 class="card-title">Duis aute irure dolor in henderit in voluptate.</h2>
-                <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                    dolore eu fugiat nulla pariatur...</p>
-                <button class="card-btn">Continue Reading </button>
+                <p class="card-text ">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat,</p>
+                <p>sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+                <button class="card-btn" onclick="toggleModal()">Continue Reading </button>
             </div>
         </article>
         <article class="card flex  list-width" id="food-factory">
             <img src="images/image3.jpeg" alt="" class="card-image">
-            <div class="pri-container flex-column">
+            <div class="pri-container flex flex-column">
                 <h2 class="card-title">Duis aute irure dolor in henderit in voluptate.</h2>
-                <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                    dolore eu fugiat nulla pariatur...</p>
-                <button class="card-btn">Continue Reading </button>
+                <p class="card-text ">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat,</p>
+                <p>sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+                <button class="card-btn" onclick="toggleModal()">Continue Reading </button>
             </div>
         </article>
 
         <div class="post-navigation flex space-between align-center">
-            <span><a href="#"><i class="fas fa-arrow-left align-center"></i>Prevoius</a></span>
-            <span><a href="#">Next<i class="fas fa-arrow-right "></i></a></span>
+            <a href="#"><i class="fas fa-arrow-left align-center"></i>Prevoius</a>
+            <a href="#">Next<i class="fas fa-arrow-right "></i></a>
         </div>
     </main>
-    <footer class="main-footer flex flex-column align-center space-between">
-        <div class="logo">Blogin<span>.</span></div>
-        <div class="">©2014 Blogin.com - All Rights Reserved - Find more free Templates at
-            <span>Pixelhint.com</span>
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-logo">Blogin<span class="logo-span">.</span></div>
+            <div class="footer-link">
+                <small>© 2014 Blogin.com - All Rights Reserved - Find more free Templates at
+                          <a class="footer-link" href="Pixelhint.com">Pixelhint.com</a></small>
+            </div>
+            <ul class="social-links clean-ul flex clean-list">
+                <li>
+                    <a href="" class="icon-font facebook"></a>
+                </li>
+                <li>
+                    <a href="" class="icon-font twitter"></a>
+                </li>
+                <li>
+                    <a href="" class="icon-font dribble "></a>
+                </li>
+                <li>
+                    <a href="" class="icon-font behance"></a>
+                </li>
+            </ul>
         </div>
-        <div class="social-icons flex">
-            <div class="icon icon-facebook flex align-center justify-content btn-pointer">
-                <img src="/images/social-icons/F@1X.png" alt="">
-            </div>
-            <div class="icon icon-twitter flex align-items justify-content btn-pointer">
-                <img src="/images/social-icons/L@1X.png" alt="">
-            </div>
-            <div class="icon icon-be flex align-items justify-content btn-pointer">
-                <img src="/images/social-icons/E@1X.png" alt="">
-            </div>
-            <div class="icon icon-globe flex align-items justify-content btn-pointer">
-                <img src="/images/social-icons/D@1X.png" alt="">
-            </div>
-        </div>
+        <section class="main-modal flex align-center justify-content">
+            <div class="modal">
+                <h2 class="modal-h2">“Join us to get access to the latest stories!”</h2>
+                <div class="email">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" class="email-input" placeholder="enter your mail">
+                </div>
+                <div class=" close sub-btn">
+                </div>
+                <div class=" close close-btn">
+                    <label for="submit"></label>
+                    <button class="submit" onclick="toggleModal()">Submit</button>
+                    <label for="close"></label>
+                    <button class="close-modal" onclick="toggleModal()">Close</button>
+                </div>
 
+            </div>
+        </section>
     </footer>
+    <script>
+        function toggleMenu() {
+            // elModal.classList.remove('menu-hidden')
+            document.body.classList.toggle('menu-open');
+        }
 
+        function toggleModal() {
+            // document.querySelector('.main-modal').style.display = "block"
+            document.querySelector('.main-modal').classList.toggle('menu-hidden');
+        }
+    </script>
 </body>
 
 </html>
